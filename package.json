@@ -1,0 +1,25 @@
+{
+  "name": "startup-sprint-simulator",
+  "version": "1.0.0",
+  "description": "A deterministic multi-agent sprint lifecycle simulator with visible state machine orchestration.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5174",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4173",
+    "test": "node tests/run-tests.js"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^5.0.4",
+    "vite": "^7.1.9",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "keywords": [
+    "multi-agent",
+    "state-machine",
+    "simulation",
+    "sprint"
+  ],
+  "license": "MIT"
+}

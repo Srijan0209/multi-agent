@@ -1,0 +1,73 @@
+[
+  {
+    "id": "happy_path_ticket_reaches_done",
+    "seed": 43,
+    "expected": {
+      "finalState": "DONE"
+    }
+  },
+  {
+    "id": "review_requests_revision_when_tests_are_weak",
+    "seed": 42,
+    "expected": {
+      "minimumReviewLoops": 1
+    }
+  },
+  {
+    "id": "review_requests_revision_when_plan_is_sparse",
+    "seed": 2,
+    "expected": {
+      "reviewDecisionIncludesRevise": true
+    }
+  },
+  {
+    "id": "fixed_seed_replays_identical_transitions",
+    "seed": 77,
+    "expected": {
+      "deterministic": true
+    }
+  },
+  {
+    "id": "stop_freezes_state_without_done",
+    "seed": 42,
+    "expected": {
+      "state": "STOPPED"
+    }
+  },
+  {
+    "id": "reset_clears_logs_and_versions",
+    "seed": 42,
+    "expected": {
+      "messages": 0,
+      "artifactVersions": 0
+    }
+  },
+  {
+    "id": "artifact_versions_increase_monotonically",
+    "seed": 42,
+    "expected": {
+      "monotonic": true
+    }
+  },
+  {
+    "id": "baseline_has_lower_review_score",
+    "seed": 42,
+    "expected": {
+      "improvementGreaterThan": 0
+    }
+  },
+  {
+    "id": "message_protocol_contains_run_agent_state_payload",
+    "seed": 42,
+    "expected": {
+      "protocol": "startup-sprint.v1"
+    }
+  },
+  {
+    "id": "transition_history_records_from_to_reason",
+    "seed": 42,
+    "expected": {
+      "requiredFields": ["from", "to", "reason"]
+    }
+  }
+]
